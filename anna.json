@@ -1,0 +1,17 @@
+{
+  "id": "data2chart-app",
+  "name": "Data2Chart AI",
+  "description": "AI-powered tool that converts CSV data into beautiful charts and smart insights instantly",
+  "version": "1.0.0",
+  "icon": "📊",
+  "executas": {
+    "data2chart-analyzer": {
+      "path": "./executas/data2chart-analyzer",
+      "name": "Data2Chart Analyzer",
+      "description": "Analyzes CSV and generates charts"
+    }
+  },
+  "ui": {
+    "entry": "./ui/index.html"
+  }
+}
