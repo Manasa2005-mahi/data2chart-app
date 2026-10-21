@@ -1,0 +1,8 @@
+{
+  "name": "data2chart-app",
+  "version": "1.0.0",
+  "description": "Data2Chart AI - CSV to Charts",
+  "dependencies": {
+    "@anna-ai/app-runtime": "^0.17.0"
+  }
+}
