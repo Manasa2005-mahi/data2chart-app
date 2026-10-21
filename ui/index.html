@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Data2Chart AI</title></head>
+<body>
+<h1>📊 Data2Chart AI</h1>
+<p>Upload CSV, get instant charts & AI insights!</p>
+<input type="file" id="csv" accept=".csv" />
+<button onclick="analyze()">Analyze</button>
+<pre id="out"></pre>
+<script>
+async function analyze(){
+  const file = document.getElementById('csv').files[0];
+  const text = await file.text();
+  const res = await window.anna.executa('data2chart-analyzer', {csvData: text, chartType: 'bar'});
+  document.getElementById('out').innerText = JSON.stringify(res, null, 2);
+}
+</script>
+</body>
+</html>
